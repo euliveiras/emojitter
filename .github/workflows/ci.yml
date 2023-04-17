@@ -5,6 +5,9 @@ on: [push, pull_request]
 env:
   DATABASE_URL: "https://fake.com"
 
+runs:
+  using: "node16"
+
 jobs:
   build:
     runs-on: ubuntu-latest
